@@ -9,6 +9,7 @@ import routerProducto from './routes/producto.route.js'; // Corregido
 import routerReporte from './routes/reporte.model.js';
 import routerTalla from './routes/talla.router.js';
 import routerVenta from './routes/venta.router.js';
+import routerSeparado from './routes/separado.router.js';
 const app = express();
 
 // Middlewares
@@ -23,6 +24,7 @@ app.use("/api", routerFoto);
 app.use("/api", routerProducto);
 app.use("/api", routerReporte);
 app.use("/api", routerTalla);
+app.use("/api", routerSeparado);
 app.use("/api", routerVenta);
 
 app.use((req, res, next) => {
